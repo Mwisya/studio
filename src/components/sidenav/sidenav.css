@@ -1,0 +1,78 @@
+.sidenav{
+    width: 100%;
+    height: 90vh;
+    padding: 0.8rem 1rem;
+    background-color: white;
+    visibility: hidden;
+    
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    
+    
+    z-index: 999;
+    position: fixed;
+    top: 9vh;
+    left: 0;
+    animation: slide-in 500ms ease-out ;
+}
+.sidenav h5{
+    color: #191911;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+.sidenav svg{
+    color: rgba(220, 20, 60,0.95);
+    
+}
+
+.side-links{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #131313;
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    font-weight: 400;
+}
+.active-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: crimson;
+    font-size: 13px;
+    padding: 10px 7px;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+.side-links svg{
+    font-size: 1.5rem;
+}
+.side-links:hover{
+    background-color: crimson;
+    color: white;
+}
+.side-links:hover svg{
+    color: white;
+}
+.sidenav-ul{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.sidenav-ul li svg{
+    color: #191911;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width:900px) {
+    .sidenav{
+        visibility: visible;
+    }
+}
+
+

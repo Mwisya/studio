@@ -1,0 +1,34 @@
+.photography{
+    width: 100%;
+    height: 100%;
+}
+
+.photography-header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 7px;
+}
+.photography-header h2{
+    font-size: 28px;
+    font-weight: 900;
+}
+.photography-header p{
+    font-size: 14px;
+    line-height: 24px;
+    width: 70%;
+}
+
+
+
+@media screen and (max-width:900px){
+    .photography-header h2{
+        font-size: 25px;
+        font-weight: 900;
+    }
+    .photography-header p{
+        font-size: 14px;
+        line-height: 24px;
+        width: 100%;
+    }
+}

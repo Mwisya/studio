@@ -1,0 +1,140 @@
+.service{
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.sidenav-height{
+    height: 92vh;
+}
+.service-left{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-right{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+.service-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-images{
+    width: 350px;
+    height: 240px;
+    background-color: white;
+    overflow: hidden;
+}
+.service-images img{
+    transition: 400ms ease;
+    scale: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-images:hover img{
+    scale: 1.1;
+}
+
+@media screen and (max-width:1024px) {
+    .service{
+        height: 80vh;
+    }
+    .service-right{
+        width: 70%;
+        height: 100%;
+    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        align-items: center;
+    }
+    .service-images{
+        width: 250px;
+        height: 270px;
+        background-color: white;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:900px) {
+    .service{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .service-left{
+        width: 100%;
+        height: 50vh;
+    }
+    .service-right{
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-images{
+        width: 300px;
+        height: 240px;
+        background-color: white;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:500px) {
+    .service{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .service-left{
+        width: 100%;
+        height: 40vh;
+    }
+    .service-right{
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-images{
+        width: 98%;
+        height: 270px;
+        background-color: white;
+        overflow: hidden;
+    }
+}

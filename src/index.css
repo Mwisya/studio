@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,157 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+:root{
+  --bg-color: rgb(3, 3, 136);
+  --font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  font-family: var(--font-family);
+  user-select: none;
+  background-color: #f1eef1;
+  
+}
+ul{
+  list-style: none;
+}
+.flex-c{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transition{
+  transition: 1s;
+}
+.layout{
+  width: 100vw;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+.layout-aside{
+  width: 15%;
+  height: 100%;
+  visibility: visible;
+  background-color: white;
+}
+.layout-data{
+  width: 85%;
+  height: 100%;
+  padding-top: 7px;
+}
+
+/* //IMAGE MODAL STYLE */
+
+
+.modal{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  
+  
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 300ms ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.modal.open{
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1);
+  visibility: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+}
+
+.modal > img{
+  width: 60%;
+  height: 60%;
+  filter: saturate(2);
+  -webkit-filter: saturate(2);
+  -moz-filter: saturate(2);
+  object-fit: contain;
+}
+.modal.open i{
+  color: crimson;
+  cursor: pointer;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  padding:2px 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:1050px) {
+  .layout-aside{
+    width: 20%;
+    
+  }
+  .layout-data{
+    width: 80%;
+  }
+  .modal > img{
+    width: 75%;
+    height: 70%;
+}
+}
+
+
+@media screen and (max-width:900px) {
+  .layout{
+    display: flex;
+    gap: 0;
+  }
+  .layout-aside{
+    width: 0;
+    visibility: hidden;
+  }
+  .layout-data{
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width:500px){
+  .modal > img{
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+}
+}
+
+

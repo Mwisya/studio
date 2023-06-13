@@ -1,0 +1,98 @@
+.re-use{
+    width: 100vw;
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.re-use-wrapper{
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+}
+.re-use-wrapper h3{
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.re-use-items{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
+}
+.re-use-item{
+    width: 300px;
+    height: 350px;
+    position: relative;
+}
+.re-use-btn{
+    width: max-content;
+    position: absolute;
+    top: 55%;
+    left: 12.5%;
+    border: 0;
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #444;
+    font-weight: 800;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    padding:.7rem 2rem;
+    transition: 500ms ease-in;
+}
+.re-use-item:hover .re-use-btn{
+    background-color: black;
+    color: white;
+}
+.re-use-wrapper img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border: 0.5 solid gray;
+}
+
+.re-use-item button{
+    cursor: pointer;
+}
+.last-item{
+    width: 300px;
+    height: 350px;
+    background-color: lightblue;
+}
+.last-item-link{
+    height: 100%;
+    width: 100%;
+    padding: 7px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:900px) {
+    .re-use{
+        height: 100%;
+    }
+    .re-use-wrapper{
+        width: 99%;
+    }
+    .re-use-wrapper h3{
+        padding-left: 7px;
+    }
+    .re-use-wrapper div{
+        width:100%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .re-use-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}

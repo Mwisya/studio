@@ -1,0 +1,6 @@
+export{default as HomePage} from './HomePage'
+export{default as AboutUsPage} from './AboutUsPage'
+export{default as ContactUsPage} from './ContactUsPage'
+export{default as BookingPage} from './BookingPage'
+export{default as CareerPage} from './CareerPage'
+export{default as StudioPage} from './StudioPage'

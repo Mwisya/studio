@@ -1,0 +1,33 @@
+footer{
+    width: 100vw;
+    height: 14vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow-us{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: chartreuse;
+}
+
+.follow-us svg{
+    font-size: 1rem;
+    color: black;
+}
+
+.follow-us a{
+    color: #131313;
+    text-decoration: none;
+}
+footer p{
+    color: #131313;
+    line-height: 2;
+    text-align: center;
+    font-size: 12px;
+}

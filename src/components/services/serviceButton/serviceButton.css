@@ -1,0 +1,10 @@
+.service-btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-btn{
+    text-decoration: none;
+    padding: 7px 16px;
+}

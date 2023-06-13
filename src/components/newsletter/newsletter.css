@@ -1,0 +1,137 @@
+.newsletter-container{
+    width: 100vw;
+    height: 200px;
+    padding: 10px;
+    text-transform: capitalize;
+    background-color: crimson;
+    /* background-color: #003f4C; */
+
+
+    backdrop-filter: blur(12px);
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.newsletter-container h4{
+    color: white;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.newsletter-container p{
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 14px;
+}
+.newsletter-response{
+    font-size: 12px;
+    text-transform: lowercase;
+    transform: eall ease-out;
+}
+.newsletter{
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all ease-in-out 500ms;
+}
+.newsletter input{
+    width: 80%;
+    padding: 15px;
+    border: 0;
+    background-color: rgba(255,255,255,0.5);
+
+
+}
+.newsletter-btn{
+    width: 20%;
+    padding: 0 10px;
+    height: 100%;
+    border-radius: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+.newsletter-btn:hover{
+    background-color: black;
+    color: white;
+    font-weight: 900;
+}
+
+.newsletter-ul{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.newsletter-ul > li{
+    font-size: 14px;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+}
+
+@media screen and (max-width:1024px) {
+    .newsletter{
+        width: 55%;
+    }
+}
+@media screen and (max-width:900px) {
+    .newsletter-container{
+        display: flex;
+        justify-content: center;
+    }
+    .newsletter{
+        width: 55%;
+    }
+    .newsletter input{
+        width: 80%;
+
+    }
+    .newsletter-btn{
+        width: max-content;
+        font-size: 12px;
+    }
+ 
+}
+
+@media screen and (max-width:500px) {
+    .newsletter-container h4{
+        font-size: 14px;
+    }
+    
+    .newsletter-container p{
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .newsletter{
+        width: 98%;
+    }
+    .newsletter input{
+        width: 75%;
+
+    }
+    .newsletter-btn{
+        width: 25%;
+        font-size: 12px;
+
+    }
+    .newsletter-ul > li{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,54 @@
+header{
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(25, 25, 17,1);
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    padding: 0 1rem;
+}
+
+.logo-section{
+    width: 20%;
+}
+.logo-section h2{
+    color: white;
+    width: 100%;
+}
+.topnav-section{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    
+}
+.topnav-section svg{
+    cursor: pointer;
+    font-size: 2.3rem;
+}
+.visibility{
+    color: whitesmoke;
+    visibility: hidden;
+}
+
+
+@media screen and (max-width:900px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    .visibility{
+        visibility: visible;
+    }
+    .logo-section{
+        width: 30%;
+
+    }
+    .topnav-section{
+        display: none;
+    }
+}
